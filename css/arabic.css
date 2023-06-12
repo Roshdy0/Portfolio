@@ -1,0 +1,76 @@
+.arabic, .arabic::after{
+    left: unset !important;
+    right: 0;
+}
+/* Start OptionBar */
+.OptionBar .dropdown-toggle:empty::after{display: none;}
+/* End OptionBar */
+/* Start NavBar */
+.navbar-expand-lg .navbar-collapse{padding: 25px 0;}
+li.nav-item:hover .nav-link::before, .navbar-nav .nav-link.active::before{
+    left: unset;
+    right: 0;
+}
+/* End NavBar */
+/* Start Landing */
+.landing .row{display: block;}
+.landing .placeholderName{
+    left: unset;
+    right: 30px;
+    line-height: 1.5;
+}
+.landing .p{font-size: 25px;}
+.landing .name{margin: 50px 0 0 0;}
+.landing .avatar::after{
+    right: 0;
+    left: unset;
+}
+.landing .avatar::before{right: -40px;}
+.landing .img {
+    border-radius: 50% 50% 50% 0%;
+    -webkit-border-radius: 50% 50% 50% 0%;
+    -moz-border-radius: 50% 50% 50% 0%;
+    -ms-border-radius: 50% 50% 50% 0%;
+    -o-border-radius: 50% 50% 50% 0%;
+}
+.landing .img img{
+    left: 40px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.landing .name::after{
+    right: 0;
+    left: unset;
+}
+.landing .social{
+    left: 30px;
+    right: unset;
+}
+/* End Landing */
+/* Start bout */
+.about .box p{text-align: right;}
+/* End About */
+/* Start Experience */
+.experience .row{
+    display: flex;
+    justify-content: center;
+}
+.experience .box ul li div:nth-of-type(2){
+    text-align: right;
+    padding: 0 200px 0 0;
+}
+.experience .box ul li h6 {display: inline-block;}
+.experience .box ul li p {margin: 0 20px 5px 0;}
+/* End Experience */
+/* Start Contact Me */
+.Contact-Me .title h3:after{
+    left: unset;
+    right: -10px;
+}
+.Contact-Me .form-control{
+    text-align: right;
+}
+/* End Contact Me */
