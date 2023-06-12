@@ -7,6 +7,7 @@
         <title>رشدى ممدوح</title>
         <link rel="stylesheet" href="library/normalize.css">
         <link rel="stylesheet" href="library/respond.min.js">
+        <link rel="stylesheet" href="library/Wow/animate.css">
         <link rel="stylesheet" href="library/webfonts.min.css">
         <link rel="stylesheet" href="library/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="library/bootstrap/bootstrap.rtl.css">
@@ -55,20 +56,20 @@
                     <a href="https://github.com/Roshdy-Mammdouh"><i class="fa-brands fa-square-github"></i></a>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-ms-12 text-start float-start">
+                    <div class="col-md-6 col-ms-12 text-start float-start wow bounceInRight">
                         <p class="name"> انا رشدى ممدوح</p>
                         <p class="type"> انا اكون  <span class="animate"> </span></p>
                         <p class="p">احترافي مبتدئ مع المعرفة ذات الصلة في مجال تصميم الويب الأمامي . أبحث عن وظيفة يمكنني من خلالها استخدام مهاراتي ، بالإضافة إلى زيادة خبرتي في مجال عملي.</p>
                         <a class="fill-width" href="https://drive.google.com/file/d/1--GY8Iuds_5j-bLoxaed1KqvTOjL4jps/view?usp=drive_link"> تحميل السى فى </a>
                     </div>
-                    <div class="col-md-6 col-ms-12 float-start"><div class="avatar"><div class="img"><img src="src/Lading.png" alt=""></div></div></div>
+                    <div class="col-md-6 col-ms-12 float-start wow bounceInLeft"><div class="avatar"><div class="img"><img src="src/Lading.png" alt=""></div></div></div>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
         <!-- End Landing -->
         <!-- Start About -->
-        <div class="about section" id="about">
+        <div class="about section wow bounceInUp" id="about">
             <div class="bottom-ani dark-text-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
                     <path fill="currentColor" d="">
@@ -162,7 +163,7 @@
         </div>
         <!-- End About -->
         <!-- Start Services -->
-        <div class="services section text-center" id="services">
+        <div class="services section text-center wow bounceInUp" id="services">
             <div class="container">
                 <div class="placeholder"><h5>الخدمات</h5></div>
                 <div class="head"><h2><span>خدماتي</span></h2></div>
@@ -235,7 +236,7 @@
                     <div class="col-lg-10">
                         <div class="box">
                             <ul>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInRight">
                                     <div class="text-start">
                                         <h6 class="fill-width">فبراير, 2023 – مايو, 2023</h6>
                                     </div>
@@ -247,7 +248,7 @@
                                         <span>tfaseel.com</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInLeft">
                                     <div class="text-start">
                                         <h6 class="fill-width">سبتمبر, 2021 – يناير, 2021</h6>
                                     </div>
@@ -258,7 +259,7 @@
                                         <span>Mine Store</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInRight">
                                     <div class="text-start">
                                         <h6>يناير, 2021 – فبراير, 2021</h6>
                                     </div>
@@ -270,7 +271,7 @@
                                         <span>إدارة الإنتاج الحربي</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInLeft">
                                     <div class="text-start">
                                         <h6 class="fill-width">سبتمبر, 2019 – فبراير, 2019</h6>
                                     </div>
@@ -290,7 +291,7 @@
         </div>
         <!-- End Experience -->
         <!-- Start My Portfolio -->
-        <div class="myPortfolio section text-center" id="myPortfolio">
+        <div class="myPortfolio section text-center wow bounceInUp" id="myPortfolio">
             <div class="placeholder"><h5> ملفاتى </h5></div>
             <div class="head"><h2><span> ملفاتى </span></h2></div>
             <div class="container">
@@ -478,7 +479,7 @@
         </div>
         <!-- End My Portfolio -->
         <!-- Start Contact Me -->
-        <div class="Contact-Me section" id="Contact-Me">
+        <div class="Contact-Me section wow bounceInUp" id="Contact-Me">
             <div class="placeholder"><h5> اتصل بي </h5></div>
             <div class="head"><h2><span> اتصل بي </span></h2></div>
             <div class="container">
@@ -555,6 +556,8 @@
         <script src="library/jquery.nicescroll.min.js"></script>
         <script src="library/Bootstrap/bootstrap.bundle.js"></script>
         <script src="library/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+        <script src="library/Wow/wow.min.js"></script>
+        <script> new WOW().init();</script>
         <script src="js/My-Cv.js"></script>
         <script>
             var typed = new Typed('.animate', {

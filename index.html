@@ -7,6 +7,7 @@
         <title>Roshdy Mammdouh</title>
         <link rel="stylesheet" href="library/normalize.css">
         <link rel="stylesheet" href="library/respond.min.js">
+        <link rel="stylesheet" href="library/Wow/animate.css">
         <link rel="stylesheet" href="library/webfonts.min.css">
         <link rel="stylesheet" href="library/Bootstrap/bootstrap.css">
         <link rel="stylesheet" href="library/OwlCarousel2-2.3.4/owl.carousel.min.css">
@@ -51,7 +52,7 @@
                     <a href="https://github.com/Roshdy-Mammdouh"><i class="fa-brands fa-square-github"></i></a>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 text-start">
+                    <div class="col-md-6 text-start wow bounceInLeft">
                         <p class="name"> I'm Roshdy Mammdouh</p>
                         <p class="type">I Am <span class="animate"></span></p>
                         <p class="p">Entry-level professional with relevant knowledge in the field of front-end web design.
@@ -59,7 +60,7 @@
                         </p>
                         <a class="fill-width" href="https://drive.google.com/file/d/1--GY8Iuds_5j-bLoxaed1KqvTOjL4jps/view?usp=drive_link">Download CV</a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow bounceInRight">
                         <div class="avatar">
                             <div class="img">
                                 <img src="src/Lading.png" alt="">
@@ -71,7 +72,7 @@
         </div>
         <!-- End Landing -->
         <!-- Start About -->
-        <div class="about section" id="about">
+        <div class="about section wow bounceInUp" id="about">
             <div class="bottom-ani dark-text-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
                     <path fill="currentColor" d="">
@@ -166,7 +167,7 @@
         </div>
         <!-- End About -->
         <!-- Start Services -->
-        <div class="services section text-center" id="services">
+        <div class="services section text-center wow bounceInUp" id="services">
             <div class="container">
                 <div class="placeholder"><h5> Services</h5></div>
                 <div class="head"><h2><span>My Services</span></h2></div>
@@ -239,7 +240,7 @@
                     <div class="col-lg-10">
                         <div class="box">
                             <ul>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInLeft">
                                     <div class="col-sm-4 col-xl-3">
                                         <h6 class="fill-width">Feb, 2023 – May, 2023</h6>
                                     </div>
@@ -251,7 +252,7 @@
                                         <span>tfaseel.com</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInRight">
                                     <div class="col-sm-4 col-xl-3">
                                         <h6 class="fill-width">Sep, 2021 – Jan, 2021</h6>
                                     </div>
@@ -262,7 +263,7 @@
                                         <span>Mine Store</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInLeft">
                                     <div class="col-sm-4 col-xl-3">
                                         <h6 class="fill-width">Jan, 2021 – Feb, 2021</h6>
                                     </div>
@@ -274,7 +275,7 @@
                                         <span>Ministry of Military Production</span>
                                     </div>
                                 </li>
-                                <li class="row g-0">
+                                <li class="row g-0 wow bounceInRight">
                                     <div class="col-sm-4 col-xl-3">
                                         <h6 class="fill-width">Dec, 2019 – Feb, 2019</h6>
                                     </div>
@@ -294,7 +295,7 @@
         </div>
         <!-- End Experience -->
         <!-- Start My Portfolio -->
-        <div class="myPortfolio section text-center" id="myPortfolio">
+        <div class="myPortfolio section text-center wow bounceInUp" id="myPortfolio">
             <div class="placeholder"><h5> My Portfolio</h5></div>
             <div class="head"><h2><span>My Portfolio</span></h2></div>
             <div class="container">
@@ -482,7 +483,7 @@
         </div>
         <!-- End My Portfolio -->
         <!-- Start Contact Me -->
-        <div class="Contact-Me section" id="Contact-Me">
+        <div class="Contact-Me section wow bounceInUp" id="Contact-Me">
             <div class="placeholder"><h5> Contact Me</h5></div>
             <div class="head"><h2><span>Contact Me</span></h2></div>
             <div class="container">
@@ -566,6 +567,8 @@
         <script src="library/jquery.nicescroll.min.js"></script>
         <script src="library/Bootstrap/bootstrap.bundle.js"></script>
         <script src="library/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+        <script src="library/Wow/wow.min.js"></script>
+        <script>new WOW().init();</script>
         <script src="js/My-Cv.js"></script>
         <script>
             var typed = new Typed('.animate', {
