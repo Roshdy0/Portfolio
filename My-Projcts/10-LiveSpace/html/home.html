@@ -1,0 +1,310 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Space Life </title>
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../../library/normalize.css">
+        <link rel="stylesheet" href="../../library/webfonts.min.css">
+    </head>
+    <body>
+        <!-- Start Setting Box -->
+        <div class="setting">
+            <div class="toggle">
+                <i class="fa fa-gear"></i>
+            </div>
+            <div class="">
+                <div class="option">
+                    <h4>colors</h4>
+                    <ul class="color-list">
+                        <li class="active" data-color="#55d7ff"></li>
+                        <li data-color="#e91e63"></li>
+                        <li data-color="#009688"></li>
+                        <li data-color="#03a9f4"></li>
+                        <li data-color="#4caf50"></li>                    
+                    </ul>
+                </div>
+                <!-- Random background -->
+                <div class="option">
+                    <h4>Random background</h4>
+                    <div class="random-background">
+                        <span class="yes active" data-background="yes">yes</span>
+                        <span class="no" data-background="no">no</span>      
+                    </div>          
+                </div>
+                <!-- Show Bulltes -->
+                <div class="option">
+                    <h4>Show Bulltes</h4>
+                    <div class="bulltes-option">
+                        <span class="yes active" data-display="show">yes</span>
+                        <span class="no" data-display="hidden">no</span>      
+                    </div>          
+                </div>
+                <!-- Button Reset -->
+                <button class="reset-option">Reset Option</button>
+            </div>
+        </div>
+        <!-- End Setting Box -->
+        <!-- Start Nav Bullets-->
+        <div class="nav-bulltes">
+            <div class="bulltes" data-section=".about-us">
+                <div class="tooltip">About Us</div>
+            </div>
+            <div class="bulltes" data-section=".Skills">
+                <div class="tooltip">Skills</div>
+            </div>
+            <div class="bulltes" data-section=".gallery">
+                <div class="tooltip">Our gallery</div>
+            </div>
+            <div class="bulltes" data-section=".timeline">
+                <div class="tooltip">Timeline</div>
+            </div>
+            <div class="bulltes" data-section=".features">
+                <div class="tooltip">Features</div>
+            </div>
+            <div class="bulltes" data-section=".testimonial">
+                <div class="tooltip">Testimonial</div>
+            </div>
+        </div>
+        <!-- End Nav Bullets -->
+        <!-- Start Landing Page -->
+        <div class="landing">
+            <div class="overlay">
+                <div class="container">
+                    <div class="header">
+                        <div class="logo left">Live space</div>
+                        <ul class="links right">
+                            <li><a class="active">home</a></li>
+                            <li><a data-section=".about-us">about</a></li>
+                            <li><a data-section=".skills">Skills</a></li>
+                            <li><a data-section=".gallery">Gallery</a></li>
+                            <li><a data-section=".timeline">Timeline</a></li>
+                            <li><a data-section=".features">features</a></li>
+                            <li><a data-section=".testimonial">Testimonial</a></li>
+                        </ul>
+                        <div class="menu-phone hidden">
+                            <span>
+                                <i class="fa-solid fa-bars navbar-toggle"></i>
+                                <ul class="navbar-dropdown hidden">
+                                    <li><a class="active">home</a></li>
+                                    <li><a data-section=".about-us">about</a></li>
+                                    <li><a data-section=".skills">Skills</a></li>
+                                    <li><a data-section=".gallery">Gallery</a></li>
+                                    <li><a data-section=".timeline">Timeline</a></li>
+                                    <li><a data-section=".features">features</a></li>
+                                    <li><a data-section=".testimonial">Testimonial</a></li>
+
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="interoduction">
+                        <h1>Galaxies and planets in <span> Space</span></h1>
+                        <p>Space is a world like the ocean, whoever tries to penetrate it gets lost in its vast expanses.Whoever looks at space, the earth does not constrict him, because it is part of the components of the vast universe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Landing Page -->
+        <!-- Start Abut Us  -->
+        <div class="container">
+            <div class="about-us" id="about">
+                <div class="info-box">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed commodi corrupti nisi repellat molestias quod esse ex? Sit temporibus nam esse. Quisquam reiciendis sequi voluptate dolorum consectetur illum beatae?</p>
+                </div>
+                <div class="img-box">
+                    <img src="../image/about-us.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End About Us  -->
+        <!-- Start Our Skills -->
+        <div class="skills" id="Skills">
+            <div class="container">
+                <h2>Our Skills</h2>
+                <div class="skill-box">
+                    <div class="skill-name">Power</div>
+                    <div class="skill-progress">
+                        <span data-progress="90%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">Ability</div>
+                    <div class="skill-progress">
+                        <span data-progress="80%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">speed</div>
+                    <div class="skill-progress">
+                        <span data-progress="100%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">Strong</div>
+                    <div class="skill-progress">
+                        <span data-progress="95%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our Skills -->
+        <!-- Start Our Gallery  -->
+        <div class="gallery" id="Gallery">
+            <div class="container">
+                <h2>Our Gallery</h2>
+                <div class="img grid-template">
+                    <img src="../image/Gallery1.png" alt="Image One">
+                    <img src="../image/Gallery2.png" alt="Image Two">
+                    <img src="../image/Gallery3.png" alt="Image Three">
+                    <img src="../image/Gallery4.png" alt="Image Four">
+                    <img src="../image/Gallery5.png" alt="Image Five">
+                    <img src="../image/Gallery1.png" alt="">
+                    <img src="../image/Gallery2.png" alt="">
+                    <img src="../image/Gallery3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Our Gallery  -->
+        <!-- Start Time Line -->
+        <div class="timeline" id="Timeline">
+            <div class="container">
+                <div class="timeline-content">
+                    <div class="year">2023</div>
+                    <div class="left">
+                        <div class="content">
+                            <h3>Testing Heading</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sapiente, doloribus mollitia distinctio saepe rerum sint, eius odit expedita officia hic totam. Error, provident rem dolores ea iure illo temporibus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="right">
+                        <div class="content">
+                            <h3>Testing Heading</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sapiente, doloribus mollitia distinctio saepe rerum sint, eius odit expedita officia hic totam. Error, provident rem dolores ea iure illo temporibus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="year">2022</div>
+                    <div class="right">
+                        <div class="content">
+                            <h3>Testing Heading</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sapiente, doloribus mollitia distinctio saepe rerum sint, eius odit expedita officia hic totam. Error, provident rem dolores ea iure illo temporibus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Time Line -->
+        <!-- Start Our Features -->
+        <div class="features" id="features">
+            <div class="container">
+                <div class="feat-box">
+                    <img src="../image/feat1.jpg" alt="">
+                    <h4>Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque numquam iure provident harum quasi aspernatur quo, autem sint pariatur delectus amet, fuga velit, culpa doloribus perferendis. Sunt, vel velit.</p>
+                </div>
+                <div class="feat-box">
+                    <img src="../image/feat2.jpg" alt="">
+                    <h4>Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque numquam iure provident harum quasi aspernatur quo, autem sint pariatur delectus amet, fuga velit, culpa doloribus perferendis. Sunt, vel velit.</p>
+                </div>
+                <div class="feat-box">
+                    <img src="../image/feat3.jpg" alt="">
+                    <h4>Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque numquam iure provident harum quasi aspernatur quo, autem sint pariatur delectus amet, fuga velit, culpa doloribus perferendis. Sunt, vel velit.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- End Our Features -->
+        <!-- Start Counter -->
+        <div class="counter">
+            <div class="container">
+                <div class="grid-template">
+                    <div class="box">
+                        <div class="number"><p data-count="10000">9200</p></div>
+                        <div class="title"><p> Weapon</p></div>
+                    </div>
+                    <div class="box">
+                        <div class="number"><p data-count="5000">4400</p></div>
+                        <div class="title"><p> Ships</p></div>
+                    </div>
+                    <div class="box">
+                        <div class="number"><p data-count="8000">7600</p></div>
+                        <div class="title"><p> fighter</p></div>
+                    </div>
+                    <div class="box">
+                        <div class="number"><p data-count="2500">2300</p></div>
+                        <div class="title"><p> unit</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Counter -->
+        <!-- Start Testimonial  -->
+        <div class="testimonial" id="Testimonial">
+            <div class="container">
+                <h2>Testimonial</h2>
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo aliquam nobis veniam, quia vitae dicta obcaecati quo tempore, iure officiis exercitationem neque corrupti repudiandae, at quidem. Suscipit, exercitationem autem?</p>
+                    <div class="person-info">
+                        <img src="../image/1.jpg" alt="">
+                        <h4>roshdy mammdouh</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>  
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo aliquam nobis veniam, quia vitae dicta obcaecati quo tempore, iure officiis exercitationem neque corrupti repudiandae, at quidem. Suscipit, exercitationem autem?</p>
+                    <div class="person-info">
+                        <img src="../image/1.jpg" alt="">
+                        <h4>roshdy mammdouh</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>  
+                <div class="ts-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo aliquam nobis veniam, quia vitae dicta obcaecati quo tempore, iure officiis exercitationem neque corrupti repudiandae, at quidem. Suscipit, exercitationem autem?</p>
+                    <div class="person-info">
+                        <img src="../image/1.jpg" alt="">
+                        <h4>roshdy mammdouh</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- End Testimonial -->
+        <!-- Start Contact Us  -->
+        <div class="contact">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2>contact us</h2>
+                <form action="">
+                    <div class="input left">
+                        <input type="text" placeholder="Your Name" name="username">
+                        <input type="text" placeholder="Your Phone" name="phone">
+                        <input type="email" placeholder="Your Email" name="email">
+                        <input type="text" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="input right">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Contact Us -->
+        <!-- Start Footer -->
+        <div class="footer">
+            <div class="container">
+                created by <a href="https://github.com/Roshdy-Mammdouh">roshdy mammdouh</a>
+            </div>
+        </div>
+        <!-- End Footer -->
+        <script src="../js/home.js"></script>
+        <script src="../../library/jquery-3.6.1.min.js"></script>
+    </body>
+</html>
