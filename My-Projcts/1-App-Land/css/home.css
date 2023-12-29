@@ -75,9 +75,6 @@ span{
 }
 /* Mobile */
 @media(max-width: 767px) {
-    body{
-        width: 100vh;
-    }
     .container {
         width: 600px;
     }
