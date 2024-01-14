@@ -119,6 +119,7 @@ body{
     width: 100%;
 }
 /* End Frame Work */
+
 /* Start Nav Bar */
 .navbar{
     z-index: 2;
@@ -191,6 +192,7 @@ a.dropdown-item.active, .dropdown-item:hover, .dropdown-item:focus{
     li.nav-item{padding: 5px 10px;}
 }
 /* End Nav Bar */
+
 /* Start Landing */
 .landing{padding: 90px 0 0 0;}
 .landing .row{align-items: center;}
@@ -458,6 +460,13 @@ a.dropdown-item.active, .dropdown-item:hover, .dropdown-item:focus{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.UlExperience li {
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    list-style: disc;
+    padding: 10px !important;
+}
 .experience .box ul li div:nth-of-type(2){
     text-align: left;
     padding: 0 0 0 50px;
@@ -641,10 +650,16 @@ a.dropdown-item.active, .dropdown-item:hover, .dropdown-item:focus{
     bottom: 20px;
     right: 40px;
     font-size: 40px;
+    transition: var(--main-color);
+    -webkit-transition: var(--main-color);
+    -moz-transition: var(--main-color);
+    -ms-transition: var(--main-color);
+    -o-transition: var(--main-color);
     display: none;
 }
 .up i:hover{
-    color: #fff;
+    color: #FFF;
     background-color: var(--main-color);
+    border-radius: 50%;
 }
 /* End Arrow Up */

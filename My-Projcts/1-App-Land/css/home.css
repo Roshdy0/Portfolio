@@ -16,7 +16,6 @@ body{
     font-weight: 700;
     margin-bottom: 28px;
     color: #666;
-    
 }
 a{
     text-transform: uppercase;
@@ -102,7 +101,6 @@ span{
 .header{
     padding: 30px 0;
     position: fixed;
-    width: 100%;
     z-index: 2;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -130,6 +128,8 @@ span{
     padding: 5px 15px;
     border: 1px solid #fff;
     z-index: 2;
+    position: absolute;
+    right: 50px;
 }
 .header .navbar-toggle ul{
     position: absolute;
@@ -155,11 +155,6 @@ span{
     .header .fa-bars{
         display: block;
     } 
-}
-@media(max-width: 767px) {
-    .header .fa-bars {
-        margin: 0 0 0 60px;
-    }
 }
 .header .links ul{
     display: inline-flex;
@@ -275,12 +270,6 @@ font-weight: 700px;
         flex-wrap: wrap;
         align-items: center;
     }
-    .header .logo img {
-        max-height: 20px;
-    }
-    .header .navbar-toggle {
-        margin: 0 0 0 60px;
-    }
 }
 /* End Header */
 /* Start Landing */
@@ -378,28 +367,29 @@ font-weight: 700px;
 
 .landpage .p2-images img{
     position: absolute;
-    width: 60%;
+    width: 46%;
     height: 90%;    
 }
 .landpage .p2-images .img1{
     z-index: 3;
     animation-duration: 0.5s;
     animation-name: fadeInRight;
+    right: 100px;
     
 }
 .landpage .p2-images .img2{
     z-index: 2;
-    left: 105px;
     animation-duration: 0.5s;
     animation-delay: 0.3s;
     animation-name: fadeInRight;
+    right: 50px;
 }
 .landpage .p2-images .img3{
     z-index: 1;
-    left: 205px;
     animation-duration: 0.5s;
     animation-delay: 0.6s;
     animation-name: fadeInRight;
+    right: 0;
 }
 @media(max-width: 767px) {
     .p2-images {
@@ -866,7 +856,7 @@ font-weight: 700px;
             margin: 0 0 50px 0;
         }
         .pricing .faq .qustion {
-            width: 100%;
+            width: 95%;
             position: relative;
         }
 
@@ -1019,6 +1009,7 @@ font-weight: 700px;
 }
 .content .waiting{
     display: inline-flex;
+    overflow: hidden;
 }
 .content .waiting .col{
     width: 50%;
@@ -1108,6 +1099,9 @@ font-weight: 700px;
 }
 .footer li{
     margin: 0 20px;
+}
+.footer .change li {
+    margin: 0 15px ;
 }
 .footer a{
     color: #fff;
