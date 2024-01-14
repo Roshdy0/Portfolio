@@ -72,12 +72,6 @@ span{
     margin-right: auto;
     margin-left: auto;
 }
-/* Mobile */
-@media(max-width: 767px) {
-    .container {
-        width: 600px;
-    }
-}
 /* small */
 @media(min-width: 768px) {
     .container {
