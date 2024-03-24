@@ -2,36 +2,48 @@
     left: unset !important;
     right: 0;
 }
+
 /* Start OptionBar */
-.OptionBar .dropdown-toggle:empty::after{display: none;}
+.OptionBar .dropdown-toggle:empty::after{
+    display: none;
+}
 /* End OptionBar */
+
 /* Start NavBar */
-.navbar-expand-lg .navbar-collapse{padding: 25px 0;}
+.navbar-expand-lg .navbar-collapse{
+    padding: 25px 0;
+}
 li.nav-item:hover .nav-link::before, .navbar-nav .nav-link.active::before{
     left: unset;
     right: 0;
 }
 /* End NavBar */
+
 /* Start Landing */
-.landing .row{display: block;}
+.landing .row{
+    display: block;
+}
 .landing .placeholderName{
     left: unset;
     right: 30px;
     line-height: 1.5;
 }
-.landing .p{font-size: 25px;}
-.landing .name{margin: 50px 0 0 0;}
+.landing .p{
+    font-size: 25px;
+}
+.landing .name{
+    margin: 50px 0 0 0;
+}
 .landing .avatar::after{
-    right: 0;
+    right: 40px;
     left: unset;
 }
-.landing .avatar::before{right: -40px;}
+.landing .avatar::before{
+    right: -40px;
+}
 .landing .img {
+    right: 40px;
     border-radius: 50% 50% 50% 0%;
-    -webkit-border-radius: 50% 50% 50% 0%;
-    -moz-border-radius: 50% 50% 50% 0%;
-    -ms-border-radius: 50% 50% 50% 0%;
-    -o-border-radius: 50% 50% 50% 0%;
 }
 .landing .img img{
     left: 40px;
@@ -50,9 +62,13 @@ li.nav-item:hover .nav-link::before, .navbar-nav .nav-link.active::before{
     right: unset;
 }
 /* End Landing */
+
 /* Start bout */
-.about .box p{text-align: right;}
+.about .box p{
+    text-align: right;
+}
 /* End About */
+
 /* Start Experience */
 .experience .row{
     display: flex;
@@ -62,9 +78,14 @@ li.nav-item:hover .nav-link::before, .navbar-nav .nav-link.active::before{
     text-align: right;
     padding: 0 200px 0 0;
 }
-.experience .box ul li h6 {display: inline-block;}
-.experience .box ul li p {margin: 0 20px 5px 0;}
+.experience .box ul li h6 {
+    display: inline-block;
+}
+.experience .box ul li p {
+    margin: 0 20px 5px 0;
+}
 /* End Experience */
+
 /* Start Contact Me */
 .Contact-Me .title h3:after{
     left: unset;

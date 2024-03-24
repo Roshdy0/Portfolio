@@ -72,6 +72,12 @@ span{
     margin-right: auto;
     margin-left: auto;
 }
+/* XSmall */
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+}
 /* small */
 @media(min-width: 768px) {
     .container {
@@ -91,39 +97,34 @@ span{
     }
 }
 /* End Frame Work */
+
 /* Start Header */
 .header{
+    width: 100%;
+    z-index: 2;
     padding: 30px 0;
     position: fixed;
-    z-index: 2;
     transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-}
-.header .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 .header .logo img{
     max-height: 50px;
 }
 .header .links {
-    margin: 0 -50px 0 0;
     position: absolute;
+    top: 0;
     right: 0;
 }
 .header .navbar-toggle{
     display: none;
     color: #fff;
     cursor: pointer;
-    font-size: 20px;    
-    padding: 5px 15px;
+    font-size: 30px;
+    padding: 10px 30px;
     border: 1px solid #fff;
-    z-index: 2;
     position: absolute;
-    right: 50px;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 .header .navbar-toggle ul{
     position: absolute;
@@ -145,18 +146,8 @@ span{
 .header .navbar-toggle ul li a{
     padding: 0 0 0 0;
 }
-@media(max-width: 768px) {
-    .header .fa-bars{
-        display: block;
-    } 
-}
 .header .links ul{
     display: inline-flex;
-}
-@media(max-width: 768px) {
-    .header .links ul{
-        display: none;
-    } 
 }
 .header li{
     margin: 0 20px 0 0;
@@ -250,22 +241,16 @@ font-weight: 700px;
     background: #e1e1e1;
     color: #000;
 }
-@media(max-width: 767px) {
-    .header {
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-    }
-    .header .container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+@media(max-width: 1000px) {
+    .header .fa-bars{
+        display: block;
+    } 
+    .header .links ul{
+        display: none;
+    } 
 }
 /* End Header */
+
 /* Start Landing */
 .landpage{
     position: relative;
@@ -362,28 +347,28 @@ font-weight: 700px;
 .landpage .p2-images img{
     position: absolute;
     width: 46%;
-    height: 90%;    
+    height: 90%;  
+    overflow: hidden;  
 }
 .landpage .p2-images .img1{
     z-index: 3;
-    animation-duration: 0.5s;
-    animation-name: fadeInRight;
     right: 100px;
-    
+    animation: fadeInRight 1s ease-in-out;
+    -webkit-animation: fadeInRight 1s ease-in-out;
 }
 .landpage .p2-images .img2{
     z-index: 2;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
-    animation-name: fadeInRight;
     right: 50px;
+    animation: fadeInRight 1s ease-in-out;
+    -webkit-animation: fadeInRight 1s ease-in-out;
+    animation-delay: 0.3s;
 }
 .landpage .p2-images .img3{
     z-index: 1;
-    animation-duration: 0.5s;
-    animation-delay: 0.6s;
-    animation-name: fadeInRight;
     right: 0;
+    animation: fadeInRight 1s ease-in-out;
+    -webkit-animation: fadeInRight 1s ease-in-out;
+    animation-delay: 0.6s;
 }
 @media(max-width: 767px) {
     .p2-images {

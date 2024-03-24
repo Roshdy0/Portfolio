@@ -1,24 +1,17 @@
-//Animate Gear And Show Setting
-let gear = document.querySelector(".navbar .fa-bars");
-let dropDownPhone = document.querySelector(".navbar .navbar-dropdown"); 
+//When click on menu bar will show menu list----------------------------------------------------
+let gear = document.querySelector(".navbar .fa-bars"),
+    dropDownPhone = document.querySelector(".navbar .navbar-dropdown"); 
 gear.onclick = function() {
     this.classList.toggle("fa-bars-staggered");
-    dropDownPhone.classList.toggle("show");
+    dropDownPhone.classList.toggle("powerDrop");
+    dropDownPhone.classList.toggle("powerUp");
 };
 
-let startNavMove = document.querySelector(".section1 .text");
-let navBar = document.querySelector(".navbar");
-let logo = document.querySelector(".logo");
-let menu = document.querySelector(".menu");
-let menuPhone = document.querySelector(".menu-phone");
 
-let counter = document.querySelector(".counter");
-let number = document.querySelectorAll(".counter .box .number");
-let started = false; // Function started ? No
-
-let slidCar = document.querySelector(".section2 .container .call");
-let slideCarLeft = document.querySelector(".section2 .car-left");
-let slideCarRight = document.querySelector(".section2 .car-right");
+// Counter -------------------------------------------------------------------------------------
+let counter = document.querySelector(".counter"),
+    number = document.querySelectorAll(".counter .box .number"),
+    started = false; // Function started ? No
 
 function StartCount(count) {
     let num = count.dataset.count;
@@ -29,46 +22,49 @@ function StartCount(count) {
         }
     }, 10);
 }
-// 3 - Stop setInterval || Counter
+
+
+// onScroll ------------------------------------------------------------------------------------
+let startNavMove = document.querySelector(".section1 .text"),
+    navBar = document.querySelector(".navbar");
+
+let slidCar = document.querySelector(".section2 .container .call"),
+    slideCarLeft = document.querySelector(".section2 .car-left"),
+    slideCarRight = document.querySelector(".section2 .car-right");
+
 window.onscroll = function () {
-    /* Start Nav Bar */
-    if (window.scrollY >= startNavMove.offsetTop - 80) {
+    /* Change background navBar */
+    if (window.scrollY >= startNavMove.offsetTop + 20) {
         navBar.style.backgroundColor = "var(--Header-color)";
-        logo.style.padding = "15px 0";
-        menuPhone.style.padding = "10px 0";
-        menu.style.padding = "20px 0 0 0";
     } else {
         navBar.style.backgroundColor = "transparent";
-        logo.style.padding = "30px 0";
-        menu.style.padding = "40px 0 0 0";
     }
 
     /* Start Counter */
-    if ( window.scrollY >= counter.offsetTop ) {
+    if ( window.scrollY >= counter.offsetTop - 300 ) {
         if (!started){
             number.forEach((num) => StartCount(num));
         }
         started = true
     }
-
+    
     /* Start Animation Slide Car */
-    if ( window.scrollY >= slidCar.offsetTop) {
-        console.log("lab lab ;lan")
+    if ( window.scrollY >= slidCar.offsetTop + 50) {
         slideCarLeft.style.animation = "side-car-left 3s";
         slideCarRight.style.animation = "side-car-right 3s";        
-    } else {
-        slideCarLeft.style.animation = "none";
-        slideCarRight.style.animation = "none";  
     }
 }
-/* End Counter */
 
-var owl = $('.feature .owl');
+
+// Slide show by owl courser -------------------------------------------------------------------
+var owl = $('.feature .owl'),
+    owl2 = $('.testimonial .owl');
+
 owl.owlCarousel({
     items:4,
     margin:10,
     loop:true,
-
+    dotsEach: true,
     responsive: {
         0: {
             items: 1
@@ -79,13 +75,10 @@ owl.owlCarousel({
         1024: {
             items: 4
         },
-        
     }
-
 });
 
-var owl = $('.testimonial .owl');
-owl.owlCarousel({
+owl2.owlCarousel({
     items:3,
     margin:10,
     loop:true,    
@@ -103,6 +96,3 @@ owl.owlCarousel({
         }
     }
 });
-
-
-

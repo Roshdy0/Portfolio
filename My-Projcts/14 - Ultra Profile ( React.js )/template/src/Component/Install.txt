@@ -1,0 +1,18 @@
+i => install
+
+Create New React App
+    1 - npm i -g create-react-app
+    2 - Create-React-App App-Name
+    3 - CD App-Name
+    4 - npm start
+
+- npm i react-router-dom --save
+- yarn add react-scripts@latest
+- yarn global add create-react-app
+- npm i --save react-scripts@latest
+
+axios
+    1 - npm i axios || yarn add axios
+    2 - npm i axios styled-components --save
+    3 - import axios from 'axios';
+

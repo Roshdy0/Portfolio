@@ -7,25 +7,33 @@ let NavBarIcons = document.querySelectorAll(".header .icons i");
 
 window.onscroll = function () {
     if ( window.scrollY > NavBarOffSetTop.offsetTop + 200 ) {
+        
         NavBarOffSetTop.style.backgroundColor = "#fff";
         NavBarLogoFirst.style.display = "none";
         NavBarLogoSecond.style.display = "block";
+
         NavBarLinks.forEach((link) => {
             link.style.color = "#000";
         });
+
         NavBarIcons.forEach((icon => {
             icon.style.color = "#000";
         }))
+        
     }else{
+
         NavBarLogoFirst.style.display = "block";
         NavBarLogoSecond.style.display = "none";
         NavBarOffSetTop.style.backgroundColor = "transparent";
+
         NavBarLinks.forEach((link) => {
             link.style.color = "#fff";
         });
+
         NavBarIcons.forEach((icon => {
             icon.style.color = "#fff";
         }));
+        
     }
 }
 /* End Nav Bar */
