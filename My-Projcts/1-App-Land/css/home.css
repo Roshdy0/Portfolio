@@ -925,41 +925,6 @@ span{
         transform: none;
     }
 }
-
-@keyframes RightToLeft{
-    0% {
-        opacity: 0;
-        transform: translate(1000px);
-        -webkit-transform: translate(1000px);
-        -moz-transform: translate(1000px);
-        -ms-transform: translate(1000px);
-        -o-transform: translate(1000px);
-}
-    100% {
-        opacity: 1;
-        transform: translate(0);
-        -webkit-transform: translate(0);
-        -moz-transform: translate(0);
-        -ms-transform: translate(0);
-        -o-transform: translate(0);
-}
-}
-@keyframes LeftToRight{
-    0% {
-        opacity: 0;
-        transform: translate(0);
-        -webkit-transform: translate(0);
-        -moz-transform: translate(0);
-        -ms-transform: translate(0);
-        -o-transform: translate(0);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(1000px);
-        -webkit-transform: translate(1000px);
-        -moz-transform: translate(1000px);
-        -ms-transform: translate(1000px);
-        -o-transform: translate(1000px);
-    }
-}
 /* End Animation */
+
+/* 5078 0348 3444 5319 */
