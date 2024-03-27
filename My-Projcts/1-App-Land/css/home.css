@@ -80,11 +80,6 @@ span{
     margin-right: auto;
     margin-left: auto;
 }
-@media (min-width: 576px){
-    .container, .container-sm {
-        max-width: 540px;
-    }
-}
 @media (min-width: 768px){
     .container, .container-md, .container-sm {
         max-width: 720px;
@@ -226,6 +221,7 @@ span{
 }
 .landpage .p1-text{
     width: 480px;
+    z-index: 5;
 }
 .landpage .p1-text h1 span{
     color: #fff;
@@ -533,6 +529,12 @@ span{
     }
     .screenshot .iphone .images .image{
         width: 250px;
+    }
+}
+@media (max-width: 400px){
+    .screenshot .iphone::after {
+        left: 0;
+        width: 350px;
     }
 }
 /* End Screen Shoot */
