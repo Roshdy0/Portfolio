@@ -1,4 +1,4 @@
-/* Start FrameWork TEST*/
+/* Start FrameWork*/
 :root {
     --main-color: #1F65DB;
     --main-transition: 0.3s;
@@ -76,7 +76,7 @@ span{
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     position: relative;
-    width: 100%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -308,14 +308,14 @@ span{
     }
 }
 @media (max-width: 576px){
-    .landpage .box{
-        justify-content: center;
+    .landpage .p2-images .img1{
+        right: 80px;
     }
-    .landpage .p1-text{
-        width: 450px;
+    .landpage .p2-images .img2 {
+        right: 40px;
     }
-    .landpage .p2-images {
-        display: none;
+    .landpage .p2-images .img3 {
+        right: 0px;
     }
 }
 /* End LandPage */
@@ -497,7 +497,6 @@ span{
     content: "";
     background-image: url(../image/home/iphonex.png);
     position: absolute;
-    right: 0;
     left: 37%;
     top: -12px;
     z-index: 1;
@@ -526,14 +525,14 @@ span{
 }
 @media (max-width: 576px){
     .screenshot .iphone::after {
-        left: 22%;
-        width: 300px;
+        left: 70px;
+        width: 350px;
     }
     .screenshot .iphone .images{
         text-align: -webkit-center;
     }
     .screenshot .iphone .images .image{
-        width: 40%;
+        width: 250px;
     }
 }
 /* End Screen Shoot */
@@ -874,10 +873,15 @@ span{
 @media (max-width: 576px){
     .content .waiting{
         display: block;
+        text-align: -webkit-center;
     }
     .content .waiting .col,
     .content .waiting .location{
-        width: 100%;
+        width: 90%;
+        margin: 20px 0;
+    }
+    .content .waiting .location iframe{
+        margin: 0;
     }
 }
 /* End Contact */
