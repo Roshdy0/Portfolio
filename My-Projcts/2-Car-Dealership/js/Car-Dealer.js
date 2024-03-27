@@ -93,6 +93,6 @@ owl2.owlCarousel({
         },
         1024: {
             items: 4
-        }
+        },
     }
 });

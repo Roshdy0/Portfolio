@@ -985,11 +985,6 @@ padding: 10px 0 15px 0;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
 }
-@media only screen and (max-width: 765px){
-    .testimonial{
-        width: max-content;
-    }
-}
 /* End testimonial */
 
 /* Start Footer */
@@ -1230,6 +1225,7 @@ padding: 10px 0 15px 0;
     }
     100%{
         opacity: 0;
+        display: none;
     }
 }
 @keyframes power-drop{

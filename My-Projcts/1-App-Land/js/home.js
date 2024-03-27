@@ -9,8 +9,11 @@ var typed = new Typed('.animate', {
     loop: true
   });
 
-  /* Change Header With Scroll Bar */
-window.onscroll = function() {headerFun()};
+    /* Change Header With Scroll Bar */
+  window.onscroll = function() {
+    headerFun()
+};
+
 function headerFun() {
 
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
@@ -43,25 +46,46 @@ gear.onclick = function() {
 };
 
 /* owl Slider Center Mode */
-var owl = $('.first-owl');
+var owl = $('.screenshot .iphone .first-owl');
 owl.owlCarousel({
-    items:5,
-    loop:true,
-    margin:20,
-    autoplay:true,
-    autoplayTimeout:10000,
-    dotsEach:true,
-    
+  items:5,
+  loop:true,
+  margin:20,
+  autoplay:true,
+  autoplayTimeout:10000,
+  dotsEach:true,
+  responsive: {
+    0: {
+        items: 1
+    },
+    600: {
+        items: 3
+    },
+    1024: {
+        items: 5
+    },
+}
 });
+
 var owl = $('.second-owl');
 owl.owlCarousel({
-    items:2,
-    loop:true,
-    margin:20,
-    autoplay:true,
-    autoplayTimeout:8000,
-    dotsEach:true,
-    
+  items:2,
+  loop:true,
+  margin:20,
+  autoplay:true,
+  autoplayTimeout:8000,
+  dotsEach:true,
+  responsive: {
+    0:{
+      items: 1
+    },
+    600: {
+        items: 2
+    },
+    1024: {
+        items: 2
+    },
+  }
 });
 
  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
