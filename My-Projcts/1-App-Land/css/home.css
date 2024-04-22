@@ -14,7 +14,6 @@ body{
     font-family: 'Quicksand', sans-serif;
     line-height: 1.25;
     font-weight: 700;
-    margin-bottom: 28px;
     color: #666;
 }
 a{
@@ -56,9 +55,28 @@ img{
     font-size: 35px;
     text-transform: uppercase;
 }
-span{
-    color: var(--main-color);
+.particles{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
+.noParticles,
+.head,
+.pricing .plan .box,
+.waiting {
+    position: relative;
+    z-index: 2;
+}
+.smallBox {
+    box-shadow: 0 0 15px 2px rgb(0 0 0 / 44%);
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+}
+
 .gradiant-background{
     background-image: linear-gradient(293deg, #ED355B 0%, var(--main-color) 100%);
 }
@@ -320,20 +338,14 @@ span{
 .feature{
     position: relative;
     margin: -90px 0 0 0;
+    z-index: 2; /*noParticles*/
 }
 .feature .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
-.feature .box{
-    text-align: center;
-    box-shadow: 0 0 15px 0 rgb(2 3 3 / 10%);
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff;
-}
-.feature .box .icon{
+.feature .smallBox .icon{
     background-image: linear-gradient(293deg, #ED355B 0%, var(--main-color) 100%);
     font-size: 40px;
     color: var(--main-color);
@@ -343,14 +355,14 @@ span{
     border-radius: 50%;
     padding: 5px;
 }
-.feature .box .icon i{
+.feature .smallBox .icon i{
     background-color: white;
     border-radius: 50%;
     width: 70px;
     height: 70px;
     padding: 15px 0 0 0;
 }
-.feature .box h4{
+.feature .smallBox h4{
     padding-top: 15px;
     text-transform: uppercase;
 }
@@ -358,7 +370,7 @@ span{
     .feature .container {
         display: block;
     }
-    .feature .box{
+    .feature .smallBox{
         max-width: 0 0 20px 0;
     }
 }
@@ -550,14 +562,7 @@ span{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
-.rate .box{
-    text-align: center;
-    box-shadow: 0 0 15px 0 rgb(2 3 3 / 10%);
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff;
-}
-.rate .box .border{
+.rate .smallBox .border{
     background-image: linear-gradient(293deg, #ED355B 0%, var(--main-color) 100%);
     font-size: 40px;
     color: var(--main-color);
@@ -567,14 +572,14 @@ span{
     border-radius: 50%;
     padding: 5px;
 }
-.rate .box .border i{
+.rate .smallBox .border i{
     background-color: white;
     border-radius: 50%;
     width: 70px;
     height: 70px;
     padding: 15px 0 0 0;
 }
-.rate .box h1{
+.rate .smallBox h1{
     color: #000;
     padding-top: 15px;
 }
@@ -582,7 +587,7 @@ span{
     .rate .container {
         display: block;
     }
-    .rate .box {
+    .rate .smallBox {
         margin: 10px 0 10px 0;
     }
 }

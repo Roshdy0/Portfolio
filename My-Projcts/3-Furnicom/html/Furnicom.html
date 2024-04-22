@@ -7,8 +7,11 @@
         <title>Furnicom</title>
         <link rel="stylesheet" href="../../../library/normalize.css">
         <link rel="stylesheet" href="../../../library/webfonts.min.css">
+        <link rel="stylesheet" href="../../../library/Bootstrap/bootstrap.css">
         <link rel="stylesheet" href="../../../library/OwlCarousel2-2.3.4/owl.carousel.min.css">
         <link rel="stylesheet" href="../../../library/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/furnicom.css">
     </head>
     <body>
@@ -29,140 +32,233 @@
             </div>
         </div>
         <!-- End Setting Box -->
+        
         <!-- Start Nav Bar -->
-        <div class="navbar">
-            <div class="center ">
-                <div class="container">
-                    <div class="img left"><a href=""><img src="../img/logo.png" alt=""></a></div>
-                    <div class="search-form">
-                        <button type="button" class="smooth search-form-btn left hidden"><i class="fa fa-search"></i></button>
-                        <form action="#" method="post">
-                            <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
-                            <input type="text" name="keyword" placeholder="Enter your keyword...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                    <div class="shipping">
-                        <img src="../img/shipping-bg.png" alt="">
-                        <div class="shipping-info">
-                            <h6 class="shipping-title">Everyday Free Shipping</h6>
-                            <p class="shipping-desc">&amp; No Sales Tax</p>
+        <div class="header">
+            <div class="container">
+                <div class="top centerByFlex">
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="col-lg-6 col-md-9 col-sm-12">
+                                <div class="header-user"> 
+                                    <ul>
+                                        <li>
+                                            <a class="smooth dropdown-toggle">USD</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#" class="smooth">USD</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="smooth">UER</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="../img/england.png" class="lang-img" alt="">
+                                            <a class="smooth dropdown-toggle two" title=""><span class="hidden-md hidden-sm hidden-xs">English</span></a>
+                                            <ul class="dropdown-menu two">
+                                                <li>
+                                                    <a href="#" class="smooth" title="">
+                                                        <span><img src="../img/ar-ar.png" alt="" class="lang-img"></span>
+                                                        English
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="smooth" title="">
+                                                        <span><img src="../img/england.png" alt="" class="lang-img"></span>
+                                                        Arabic
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="smooth" title="">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                My Account
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="smooth" title="">
+                                                <i class="fa fa-heart"></i>
+                                                My Wishlist
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-3">
+                                <div class="header-hotline">
+                                    <div class="item">
+                                        <p>
+                                            <a href="#" class="smooth" title="">
+                                                <i class="fa-regular fa-comments"></i>
+                                                Start 
+                                                <span>LIVE CHAT</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="item p2">
+                                        <p>
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                            <span>service at:</span> 
+                                            <a href="#" class="smooth" title=""><span>+20 1114 567 1690</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="cart left">
-                        <a href="cart.html" class="smooth cart-box dropdown-toggle" title="" data-toggle="dropdown">
-                            <img src="../img/cart.png" class="cart-image" alt="">
-                            <p class="quantity">0 item(s) - $0.00</p>
-                            <p class="cart-title">MY CART</p>
-                        </a>
-                        <ul class="dropdown-menu shopping-cart hidden">
-                            <li class="shopping-cart-title clearfix">
-                                <label>Your Product</label>
-                                <label>Price</label>
-                            </li>
-                            <li class="product-item">
-                                <table class="table cart-table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="product-item-image">
-                                                <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product1.png" alt="" class="img-responsive"></a>
-                                                <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                            </td>
-                                            <td class="product-item-name">
-                                                <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                <span class="product-item-quantity">Quantity: 01</span>
-                                            </td>
-                                            <td class="product-item-price"><span class="shopping-price">$320.00</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-item-image">
-                                                <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product2.png" alt="" class="img-responsive"></a>
-                                                <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                            </td>
-                                            <td class="product-item-name">
-                                                <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                <span class="product-item-quantity">Quantity: 01</span>
-                                            </td>
-                                            <td class="product-item-price">
-                                                <span class="shopping-price">$450.00</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-item-image">
-                                                <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product3.png" alt="" class="img-responsive"></a>
-                                                <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                            </td>
-                                            <td class="product-item-name">
-                                                <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                <span class="product-item-quantity">Quantity: 01</span>
-                                            </td>
-                                            <td class="product-item-price"><span class="shopping-price">$250.00</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </li>
-                            <li class="total-price clearfix">
-                                <label class="total-title">TOTAL:</label>
-                                <label class="float-right">$1030.00</label>
-                            </li>
-                            <li class="shopping-cart-checkout">
-                                <a href="cart.html" class="smooth" title="">GO TO CART</a>
-                                <a href="checkout.html" class="smooth" title="">CHECKOUT</a>
-                            </li>
-                        </ul>
+                </div>
+                <div class="header-center">
+                    <div class="container centerByFlex">
+                        <div class="col-lg-2 col-md-3 col-sm-12 img">
+                            <a href=""><img src="../img/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-5 col-md-2 col-sm-12 search-form centerByFlex">
+                            <button class="smooth search-form-btn left hidden" type="button"><i class="fa fa-search"></i></button>
+                            <form class="col-sm-12 centerByFlex" action="#" method="post">
+                                <div class="col-sm-2 icon centerByFlex"> <i class="fa fa-search" aria-hidden="true"></i> </div>
+                                <input class="col-sm-7" type="text" name="keyword" placeholder="Enter your keyword...">
+                                <button class="col-sm-3" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 shipping centerByFlex">
+                            <img src="../img/shipping-bg.png" alt="">
+                            <div class="shipping-info">
+                                <h6 class="shipping-title">Everyday Free Shipping</h6>
+                                <p class="shipping-desc">&amp; No Sales Tax</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-12 cart">
+                            <a href="cart.html" class="smooth cart-box dropdown-toggle" title="" data-toggle="dropdown">
+                                <img src="../img/cart.png" class="cart-image" alt="">
+                                <p class="quantity">0 item(s) - $0.00</p>
+                                <p class="cart-title">MY CART</p>
+                            </a>
+                            <ul class="dropdown-menu shopping-cart hidden">
+                                <li class="shopping-cart-title clearfix">
+                                    <label>Your Product</label>
+                                    <label>Price</label>
+                                </li>
+                                <li class="product-item">
+                                    <table class="table cart-table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-item-image">
+                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product1.png" alt="" class="img-responsive"></a>
+                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
+                                                </td>
+                                                <td class="product-item-name">
+                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
+                                                    <span class="product-item-quantity">Quantity: 01</span>
+                                                </td>
+                                                <td class="product-item-price"><span class="shopping-price">$320.00</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-item-image">
+                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product2.png" alt="" class="img-responsive"></a>
+                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
+                                                </td>
+                                                <td class="product-item-name">
+                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
+                                                    <span class="product-item-quantity">Quantity: 01</span>
+                                                </td>
+                                                <td class="product-item-price">
+                                                    <span class="shopping-price">$450.00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-item-image">
+                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product3.png" alt="" class="img-responsive"></a>
+                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
+                                                </td>
+                                                <td class="product-item-name">
+                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
+                                                    <span class="product-item-quantity">Quantity: 01</span>
+                                                </td>
+                                                <td class="product-item-price"><span class="shopping-price">$250.00</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="total-price clearfix">
+                                    <label class="total-title">TOTAL:</label>
+                                    <label class="float-right">$1030.00</label>
+                                </li>
+                                <li class="shopping-cart-checkout">
+                                    <a href="cart.html" class="smooth" title="">GO TO CART</a>
+                                    <a href="checkout.html" class="smooth" title="">CHECKOUT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <div class="phone centerByFlex">
+                            <div class="p1 col-lg-10 col-md-9">
+                                <ul class="links centerByFlex">
+                                    <li><a href="" class="active"><i class="fa fa-home"></i></a></li>
+                                    <li><a href="">LAYOUTS</a></li>
+                                    <li><a href="">FEATURES</a></li>
+                                    <li><a href="">CATEGORY</a></li>
+                                    <li><a href="">blog</a></li>
+                                    <li><a href="">pages</a></li>                            
+                                    <li><a href="">hot deals</a></li>                            
+                                </ul>
+                            </div>
+                            <div class="phone-menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="p2 col-lg-2 col-md-3">
+                                <ul class="centerByFlex">
+                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="" class="smooth" title=""><i class="fa fa-wifi" ></i></a></li>
+                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                    <li><a href="" class="smooth" title=""><i class="fa-solid fa-podcast"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="bottom">
-                <div class="container">
-                    <div class="left">
-                        <ul class="links">
-                            <li class="menu-home"><a href=""><i class="fa fa-home"></i></a></li>
-                            <li><a href="">LAYOUTS<b class="caret"></b></a></li>
-                            <li><a href="">FEATURES</a></li>
-                            <li><a href="">CATEGORY</a></li>
-                            <li><a href="">blog</a></li>
-                            <li><a href="">pages</a></li>                            
-                            <li><a href="">hot deals</a></li>                            
-                        </ul>
-                    </div>
-                    <div class="phone-menu left"><i class="fa-solid fa-bars"></i></div>
-                    <div class="right">
-                        <ul>
-                            <li><a href="" class="smooth" title=""><i class="fa fa-facebook" ></i></a></li>
-                            <li><a href="" class="smooth" title=""><i class="fa fa-wifi" ></i></a></li>
-                            <li><a href="" class="smooth" title=""><i class="fa fa-twitter" ></i></a></li>
-                            <li><a href="" class="smooth" title=""><i class="fa fa-google-plus" ></i></a></li>
-                            <li><a href="" class="smooth" title=""><i class="fa fa-podcast"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
         </div>
         <!-- End Nav Bar -->
+
         <!-- Start Landing -->
         <div class="landing">
-            <div class="box landing-owl owl-carousel owl-theme">
-                <div class="slider">
+            <div class=" owl-carousel owl-theme ">
+                <div class=" item slider">
                     <div class="img"><img src="../img/home-slider.png" alt=""></div>
                     <div class="slider-info">
                         <div class="container">
                             <h3 class="small-title">FURNITURE</h3>
                             <h4 class="small-desc">Survive The Reality Of Everyday Life</h4>
                             <h2 class="big-title">COLLECTION</h2>
-                            <div class="center"><a href="" class="smooth see-more">SHOP NOW</a></div>
+                            <div class=""><a href="" class="button smooth ">SHOP NOW</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" item slider">
+                    <div class="img"><img src="../img/home-slider.png" alt=""></div>
+                    <div class="slider-info">
+                        <div class="container">
+                            <h3 class="small-title">FURNITURE</h3>
+                            <h4 class="small-desc">Survive The Reality Of Everyday Life</h4>
+                            <h2 class="big-title">COLLECTION</h2>
+                            <div class=""><a href="" class="button smooth ">SHOP NOW</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Landing -->
+
         <!-- Start Deal -->
         <div class="deal">
-            <div class="container">
-                <div class="day left ">
+            <div class="container centerByFlex">
+                <div class="day col-lg-3 col-md-3 col-sm-4">
 					<h4 class="title">Deals Of The Days </h4>
 					<div class="desc">
 						<p>Maurist ut incident nisi, id auctors libero. Team aliquot felid et consectetur faucet's. Present aliquam, lec tempus consequent, felid quam venerates ligula</p>
@@ -194,24 +290,23 @@
 						</ul>
 					</div>
 				</div>
-                <!-- offer-owl owl-carousel owl-theme -->
-                <div class="offer left  ">
+                <div class="offer col-lg-6 col-md-5 col-sm-8">
                     <div class="slid">
-                        <div class="left timer">
-                            <div class="table-countdown" data-countdown="2019/12/15">
-                                <div class="countdown-box"> 
+                        <div class="timer">
+                            <div class="countdown" data-countdown="2019/12/15">
+                                <div class="box">
                                     <span class="time days"></span> 
                                     <span class="text">DAYS</span> 
                                 </div> 
-                                <div class="countdown-box">
+                                <div class="box">
                                     <span class="time hours"></span> 
                                     <span class="text">HOURS</span>
                                 </div> 
-                                <div class="countdown-box">
+                                <div class="box">
                                     <span class="time  minutes"></span> 
                                     <span class="text">MINS</span> 
                                 </div> 
-                                <div class="countdown-box">
+                                <div class="box">
                                     <span class="time seconds"></span> 
                                     <span class="text">SECS</span> 
                                 </div> 
@@ -222,7 +317,25 @@
                                 <div class="img">
                                     <a href="" class="hv-light"><img src="../img/product.png" alt=""></a>
                                 </div>
-                                <h5 class="name"><a href="" class="smooth" title="">Donee vel venerates</a></h5>
+                                <h5 class="name">Donee vel venerates</h5>
+                                <div class="price">
+                                    $115.00 
+                                    <span class="old">$142.00</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span class="new">NEW!</span>
+                            </div>
+                            <div class="product-slid">
+                                <div class="img">
+                                    <a href="" class="hv-light"><img src="../img/product.png" alt=""></a>
+                                </div>
+                                <h5 class="name">Donee vel venerates</h5>
                                 <div class="price">
                                     $115.00 
                                     <span class="old">$142.00</span>
@@ -239,13 +352,13 @@
                         </div>
                     </div>
                 </div>                    
-                <div class="popular left">
+                <div class="popular col-lg-3 col-md-4 col-sm-12">
                     <h4 class="title">popular produce</h4>
                         <div class="desc">
-                            <div class="big-box">
+                            <div class="big-box centerByFlex">
                                 <div class="img"><a href="" class="hv-radial"><img src="../img/product35.png" alt=""></a></div>
                                 <div class="box">
-                                    <h5 class="name"><a href="" class="smooth" title="">Donee vel venerates</a></h5>
+                                    <h5 class="name">Donee vel venerates</h5>
                                     <div class="price">$115.00 <span class="old">$142.00</span></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
@@ -256,10 +369,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="big-box">
+                            <div class="big-box centerByFlex">
                                 <div class="img"><a href="" class="hv-radial"><img src="../img/product36.png" alt=""></a></div>
                                 <div class="box">
-                                    <h5 class="name"><a href="" class="smooth" title="">Donee vel venerates</a></h5>
+                                    <h5 class="name">Donee vel venerates</h5>
                                     <div class="price">$115.00 <span class="old">$142.00</span></div>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
@@ -270,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="big-box">
+                            <div class="big-box centerByFlex">
                                 <div class="img"><a href="" class="hv-radial"><img src="../img/product37.png" alt=""></a></div>
                                 <div class="box">
                                     <h5 class="name" class="smooth" title="">Donee vel venerates</a></h5>
@@ -286,27 +399,33 @@
                             </div>        
                         </div>
                 </div>
+                <div class="clearfix"></div>
             </div>    
-            <div class="clearfix"></div>
         </div>
         <!-- End Deal -->
-        <br>
+        
         <!-- Start Banner -->
         <div class="banner">
 			<div class="container">
 				<div class="row ">
-					<div class="box"><a href="" class="hv-border"><img src="../img/collection.png" class="img-responsive" alt=""></a></div>
-					<div class="box"><a href="" class="hv-border"><img src="../img/banner2.png" class="img-responsive" alt=""></a></div>
-					<div class="box"><a href="" class="hv-border"><img src="../img/banner3.png" class="img-responsive" alt=""></a></div>
+					<div class="box col-lg-4 col-md-4 col-sm-12">
+                        <a href="" class="hv-border"><img src="../img/collection.png" class="img-responsive" alt=""></a>
+                    </div>
+					<div class="box col-lg-4 col-md-4 col-sm-12">
+                        <a href="" class="hv-border"><img src="../img/banner2.png" class="img-responsive" alt=""></a>
+                    </div>
+					<div class="box col-lg-4 col-md-4 col-sm-12">
+                        <a href="" class="hv-border"><img src="../img/banner3.png" class="img-responsive" alt=""></a>
+                    </div>
 				</div>
 			</div>
-            <div class="clearfix"></div>
 		</div>
         <!-- End Banner -->
+
         <!-- Start Featured -->
         <div class="featured">
             <div class="container">
-                <h3 class="title"><span>FEATURED <span>PRODUCTS</span></span></h3>
+                <h1 class="title"><span>FEATURED <span>PRODUCTS</span></span></h1>
                 <div class="slid featured-owl owl-carousel owl-theme">
                     <div class="box">
                         <div class="img">
@@ -470,28 +589,28 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
         <!-- End Featured -->
+
         <!-- Start Information -->
         <div class="information">
 			<div class="container">
-                <div class="row">
-                    <div class="box">
+                <div class="centerByFlex">
+                    <div class="box centerByFlex col-4">
                         <div class="img"><img src="../img/infomation-image.png" ></div>
                         <div class="desc">
                             <h6 class="title">FREE SHIPPING</h6>
                             <p class="detail">Vestibule dolor purus portal</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box centerByFlex col-4">
                         <div class="image"><img src="../img/infomation-image2.png" class="img-responsive" alt=""></div>
                         <div class="desc">
                             <h6 class="title">MONEY BACK GUARANTEE</h6>
                             <p class="detail">Vestibule dolor purus portal</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box centerByFlex col-4">
                         <div class="image"><img src="../img/infomation-image3.png" class="img-responsive" alt=""></div>
                         <div class="desc">
                             <h6 class="title">24 HOURS SUPPORT</h6>
@@ -500,9 +619,9 @@
                     </div>
                 </div>
 			</div>
-            <div class="clearfix"></div>
 		</div>
         <!-- End Information -->
+        
         <!-- Start Featured -->
         <div class="featured">
             <div class="container">
@@ -673,29 +792,36 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
         <!-- End Featured -->
-        <br>
+
         <!-- Start Opinion -->
-        <div class="opinion ">
+        <div class="opinion">
             <div class="container ">
-                <div class="opinion-owl owl-carousel owl-theme"></div>
-                <div class="slid row">
-                    <div class="img"><img src="../img/avatar.png" alt=""></div>
-                    <div class="info">
-						<p class="detail">Fusee lorem ante, condiment's in massa, posturer biennium. Maecenas elision voluptate eu rhonchus. Pellentesque commode posturer maximums. Phallus pellentesque pellentesque facilities.</p>
-                        <p class="name"><span>JOHN DOE - Designer</span></p>						
+                <div class="opinion-owl owl-carousel owl-theme">
+                    <div class="slid row">
+                        <div class="img"><img src="../img/avatar.png" alt=""></div>
+                        <div class="info">
+                            <p class="detail">Fusee lorem ante, condiment's in massa, posturer biennium. Maecenas elision voluptate eu rhonchus. Pellentesque commode posturer maximums. Phallus pellentesque pellentesque facilities.</p>
+                            <p class="name"><span>JOHN DOE - Designer</span></p>						
+                        </div>
+                    </div>
+                    <div class="slid row">
+                        <div class="img"><img src="../img/avatar.png" alt=""></div>
+                        <div class="info">
+                            <p class="detail">Fusee lorem ante, condiment's in massa, posturer biennium. Maecenas elision voluptate eu rhonchus. Pellentesque commode posturer maximums. Phallus pellentesque pellentesque facilities.</p>
+                            <p class="name"><span>JOHN DOE - Designer</span></p>						
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
         <!-- End Opinion -->
+
         <!-- Start Categories -->
         <div class="categories">
-            <div class="container">
-                <div class="col left">
+            <div class="container center">
+                <div class="col-md-4 col-sm-12 col left">
                     <div class="sub">
                         <img src="../img/category1.jpg" alt="">
                         <div class="list">
@@ -722,10 +848,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col center left">
-                    <div class="hot center">
+                <div class="col-md-4 col-sm-12 col left">
+                    <div class="hot ">
                         <h4 class="title"><span>HOT <span>CATEGORIES</span></span></h4>
-                        <p class="hot-desc">Duis euismod eu nibh at pharetra. Vivamus placerat ac metus et placerat. Nulla molestie massa id est posuere, maximus hendrerit est rhoncus.</p>
+                        <p class="hot-desc">Duis elision eu nibs at phaedra. Vivants placenta ac metes et placenta. Nulla molestie massa id est posuere, maximums hendrerit est rhoncus.</p>
                         <a href="category.html" class="smooth hv-border-inline">VIEW ALL CATEGORIES</a>
                     </div>
                     <div class="sub">
@@ -743,7 +869,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col right">
+                <div class="col-md-4 col-sm-12 col right">
                     <div class="sub another">
                         <img src="../img/category2.png"alt="">
                         <div class="list">
@@ -775,39 +901,134 @@
             <div class="clearfix"></div>
         </div>
         <!-- End Categories -->
+
         <!-- Start New Letter -->
         <div class="newsletter">
-				<div class="container">
-					<div class="row center">
-						<div class="col left">
-							<h4 class="title">NEED HELP? CALL OUR AWARD-WINNING </h4>
-							<p>SUPPORT TEAM 24/7 AT <a href="tel:01117651690">0111- 765-1690</a></p>
-						</div>
-						<div class="col right">
-							<form action="">
-								<input type="text" name="email" placeholder="Enter your email address" class="form-control">
-								<button type="submit" class="form-control">SUBSCRIBE</button>
-							</form>
-						</div>
-					</div>
-				</div>
-                <div class="clearfix"></div>
-			</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 left">
+                        <h4 class="title">NEED HELP? CALL OUR AWARD-WINNING </h4>
+                        <p>SUPPORT TEAM 24/7 AT <a href="tel:01117651690">0111- 765-1690</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 right">
+                        <form action="" class="centerByFlex">
+                            <input type="text" name="email" placeholder="Enter your email address" class="form-control">
+                            <button type="submit" class="form-control">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
         <!-- End New Letter -->
+
         <!-- Start Footer -->
         <div class="footer">
             <div class="container">
-                <div class="row center">
-                    <span> Copyright 2023 Furnicom © By </span>
-                    <a class="copy" href="https://www.linkedin.com/in/roshdi-mammdoh-27a004209">Roshdy Mammdouh</a>
+                <div class="top">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="box">
+                                <h3 class="title">our service</h3>
+                                <ul class="list">
+                                    <li> <a href="#" class="smooth" title="">Delivery Information</a> </li>
+                                    <li> <a href="#" class="smooth" title="">Returns</a> </li>
+                                    <li> <a href="#" class="smooth" title="">Terms &amp; Conditions</a> </li>
+                                    <li> <a href="#" class="smooth" title="">Shipping &amp; Refund</a> </li>
+                                    <li> <a href="#" class="smooth" title="">Specials</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="box">
+                                <h3 class="title">Extras</h3>
+                                <ul class="list">
+                                    <li> <a href="#" class="smooth" title="">Contact Us</a> </li>
+                                    <li> <a href="#" class="smooth" title="">return</a> </li>
+                                    <li> <a href="#" class="smooth" title="">special</a> </li>
+                                    <li> <a href="#" class="smooth" title="">brands</a> </li>
+                                    <li> <a href="#" class="smooth" title="">gift voucher</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="box">
+                                <h3 class="title">my account</h3>
+                                <ul class="list">
+                                    <li> <a href="#" class="smooth" title="">my order</a> </li>
+                                    <li> <a href="#" class="smooth" title="">My credit slips</a> </li>
+                                    <li> <a href="#" class="smooth" title="">My addresses</a> </li>
+                                    <li> <a href="#" class="smooth" title="">My personal info</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="box special">
+                                <h3 class="title">contact us</h3>
+                                <ul class="list">
+                                    <li> 
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Egypt - cairo
+                                    </li>
+                                    <li> 
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                        <a href="tel:(+20)-111765169">(+20)-111 765 1690</a> 
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:roshdy.mammdouh@gmail.com">roshdy@gmail.com</a>
+                                    </li>
+                                </ul>
+                                <div class="payment">
+                                    <img src="../img/paymen.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="right">
+                                <h6 class="title"> Download Our App </h6>
+                                <a href="#">
+                                    <img src="../img/down-app.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="left">
+                                <h6 class="title"> Follow Us </h6>
+                                <ul>
+                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-facebook-f"></i> </a> </li>
+                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-twitter"></i> </a> </li>
+                                    <li> <a href="#" class="smooth"> <i class="fa fa-wifi"></i> </a> </li>
+                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-google-plus-g"></i> </a> </li>
+                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-pinterest"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <div class="copyright text-center">
+                                Furnicom HTML © 2022 Demo Store. All Rights Reserved. Designed by
+                                <a href="https://www.roshdy.mammdouh.com/" target="_blank" class="smooth">Roshdy.com</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>            
+        </div>
         <!-- End Footer -->
+
         <!-- Start Back To Top -->
-        <div class="back-to-top smooth""><i class="fa fa-angle-up"></i></div>
+        <!-- <div class="back-to-top smooth""><i class="fa fa-angle-up"></i></div> -->
         <!-- End Back To Top -->
+
         <script src="../../../library/jquery.js"></script>
+        <script src="../../../library/Bootstrap/bootstrap.bundle.js"></script>
         <script src="../../../library/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
         <script src="../js/furnicom.js"></script>
     </body>

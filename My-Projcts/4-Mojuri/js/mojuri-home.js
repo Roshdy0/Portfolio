@@ -5,12 +5,22 @@ let NavBarLogoSecond = document.querySelector(".header .logo img:last-child");
 let NavBarLinks = document.querySelectorAll(".header .menu a");
 let NavBarIcons = document.querySelectorAll(".header .icons i");
 
+let menuPhone = document.querySelector(".header .menu-phone");
+let menuPhoneIcon = document.querySelector(".header .menu-phone i");
+let dropdown = document.querySelector(".header .menu-phone-dropdown");
+
+menuPhone.onclick = function() {
+    dropdown.classList.toggle("open");
+}
+
+
 window.onscroll = function () {
     if ( window.scrollY > NavBarOffSetTop.offsetTop + 200 ) {
         
         NavBarOffSetTop.style.backgroundColor = "#fff";
         NavBarLogoFirst.style.display = "none";
         NavBarLogoSecond.style.display = "block";
+        menuPhoneIcon.style.color = "#000";
 
         NavBarLinks.forEach((link) => {
             link.style.color = "#000";
@@ -25,7 +35,8 @@ window.onscroll = function () {
         NavBarLogoFirst.style.display = "block";
         NavBarLogoSecond.style.display = "none";
         NavBarOffSetTop.style.backgroundColor = "transparent";
-
+        menuPhoneIcon.style.color = "#FFF";
+        
         NavBarLinks.forEach((link) => {
             link.style.color = "#fff";
         });
@@ -46,14 +57,14 @@ owl.owlCarousel({
     autoplayTimeout: 10000,
     dots: false,
 });
-var owl = $('.categories-owl');
-owl.owlCarousel({
+
+let CategoriesOwl = $('.categories-owl');
+CategoriesOwl.owlCarousel({
     items: 5,
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 10000,
     dots: false,
     margin: 10,
+    autoplayTimeout: 10000,
     responsive: {
         0: {
             items: 1
@@ -68,7 +79,7 @@ owl.owlCarousel({
 });
 
 /* Start CountDown To Section Trending */
-let countDownDate = new Date("Feb 20, 2023 23:59:59").getTime();
+let countDownDate = new Date("Feb 20, 2025 23:59:59").getTime();
 let counterTimer = setInterval(() => {
     let dateNow = new Date().getTime();
     let difference =  countDownDate - dateNow ;

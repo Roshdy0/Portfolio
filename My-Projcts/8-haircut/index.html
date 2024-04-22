@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Haircut</title>
-            <link rel="stylesheet" href="../../library/normalize.css">
-            <link rel="stylesheet" href="../../library/webfonts.min.css">
-            <link rel="stylesheet" href="../../library/OwlCarousel2-2.3.4/owl.carousel.min.css">
-            <link rel="stylesheet" href="../../library/OwlCarousel2-2.3.4/owl.theme.default.min.css">
-            <link rel="stylesheet" href="css/haircut.css">
-        </head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Haircut</title>
+        <link rel="stylesheet" href="../../library/normalize.css">
+        <link rel="stylesheet" href="../../library/webfonts.min.css">
+        <link rel="stylesheet" href="../../library/Bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../../library/OwlCarousel2-2.3.4/owl.carousel.min.css">
+        <link rel="stylesheet" href="../../library/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/haircut.css">
+    </head>
     <body>
-        <!-- 12:0 30/1/2032 -->
         <!-- Start Nav Bar -->
         <div class="navbar">
             <div class="container">
-                <div class="logo">
-                    <a href="#"><div class="h1"><i class="fa fa-cut me-3"></i>HairCut</div></a>
+                <div class="col-lg-3 col-md-4 col-sm-6 logo left">
+                    <a href="#">
+                        <div class="h1 centerByFlex">
+                            <i class="fa fa-cut me-3"></i>
+                            HairCut
+                        </div>
+                    </a>
                 </div>
-                <div class="menu-bar">
+                <div class="col-lg-9 col-md-8 menu-bar centerByFlex right">
                     <ul class="links">
                         <li><a href="#" class="active">home</a></li>
                         <li><a href="#">about</a></li>
@@ -27,10 +32,13 @@
                         <li><a href="#">pages</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>   
-                    <div class="button"><a href="#" class="button">appointment<i class="fa fa-arrow-right ms-3"></i></a></div>                 
+                    <a href="#" class="button centerByFlex">
+                        appointment
+                        <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
                 </div>
-                <div class="menu-phone right hidden">
-                    <i class="fa-solid fa-bars navbar-toggle">
+                <div class="col-sm-6 menu-phone hidden right">
+                    <i class="fa-solid fa-bars navbar-toggle right">
                         <ul class="navbar-dropdown hidden">
                             <li><a href="" class="active-drop">home</a></li>
                             <li id="test"><a href="#about" >about</a></li>
@@ -43,12 +51,14 @@
                         </ul>
                     </i>
                 </div>
+                <div class="clearfi"></div>
             </div>
         </div>
         <!-- End Nav Bar -->
+
         <!-- Start Slider -->
         <div class="slider center">
-            <div class="first-owl owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme">
                 <div class="slide1">
                     <div class="overlay"></div>   
                     <div class="img"><img src="images/carousel-2.jpg" alt=""></div>
@@ -70,35 +80,40 @@
             </div>
         </div>
         <!-- End Slider -->
+
         <!-- Start About us -->
         <div class="about-us">
             <div class="container">
-                <div class="img">
-                    <img src="images/about.jpg" alt="">
-                    <div class="box">
-                        <p class="h1">25 years</p>
-                        <p class="h2">EXPERIENCE</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <p class="title">About Us</p>
-                    <p class="h1">More Than Just A Haircut. Learn More About Us!</p>
-                    <p>Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos. Clits erat ipsum et lorem et sit, sed stet lorem sit clits duo justs magna dolorem erat amet</p>
-                    <p>Stet no et lorem dolor et diam, amet duo ut dolorem vero eos. No stet est diam rebus amet diam ipsum. Clits clits laborer, dolor duo nonary clits sit at, sed sit sanctus dolor eos.</p>
-                    <div class="parts">
-                        <div class="p1">
-                            <p class="h1">Since 1990</p>
-                            <p >Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos.</p>
+                <div class="">
+                    <div class="col-lg-6 col-md-12 img left">
+                        <img class="w-75" src="images/about.jpg" alt="">
+                        <div class="box">
+                            <p class="h1">25 years</p>
+                            <p class="h2">EXPERIENCE</p>
                         </div>
-                        <div class="p2">
-                            <p class="h1">1000+ clients</p>
-                            <p >Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 info right">
+                        <p class="title">About Us</p>
+                        <p class="h1">More Than Just A Haircut. Learn More About Us!</p>
+                        <p>Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos. Clits erat ipsum et lorem et sit, sed stet lorem sit clits duo justs magna dolorem erat amet</p>
+                        <p>Stet no et lorem dolor et diam, amet duo ut dolorem vero eos. No stet est diam rebus amet diam ipsum. Clits clits laborer, dolor duo nonary clits sit at, sed sit sanctus dolor eos.</p>
+                        <div class="parts">
+                            <div class="p1">
+                                <p class="h1">Since 1990</p>
+                                <p >Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos.</p>
+                            </div>
+                            <div class="p2">
+                                <p class="h1">1000+ clients</p>
+                                <p >Tempor erat elite rebus at clits. Diam dolor diam ipsum sit. Aliquot diam amet diam et eos.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!-- End About Us -->
+
         <!-- Start Services -->
         <div class="services center">
             <div class="container">
@@ -163,12 +178,14 @@
                     </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!-- End Services -->
+
         <!-- Start Price -->
         <div class="price">
             <div class="container">
-                <div class="info">
+                <div class="col-md-6 col-sm-12 info left">
                     <p class="title">price&plan</p>
                     <p class="h1">Check Out Our Barber Services And Prices</h1>
                         <div class="all-box">
@@ -198,10 +215,14 @@
                             </div>
                         </div>
                 </div>
-                <div class="img"><img src="images/price.jpg" alt=""></div>
+                <div class="col-md-6 col-sm-12 img right">
+                    <img src="images/price.jpg" alt="">
+                </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!-- End Price -->
+
         <!-- Start Our-Team -->
         <div class="team center">
             <div class="container">
@@ -209,7 +230,7 @@
                     <p class="title">our barber</p>
                     <p class="h1">meet our barber</p>
                 </div>
-                <div class="team-owl owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme">
                     <div class="box">
                         <div class="img">
                             <img src="images/team-1.jpg" alt="">
@@ -270,6 +291,7 @@
             </div>
         </div>
         <!-- End Our Team -->
+
         <!-- Start Testimonial -->
         <div class="testimonial center">
             <div class="container">
@@ -277,7 +299,7 @@
                     <p class="title">Testimonial</p>
                     <p class="h1">WHAT OUR CLIENTS SAY!</p>
                 </div>
-                <div class="testimonial-owl owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme">
                     <div class="box">
                         <div class="info">
                             <p class="name">client name</p>
@@ -303,15 +325,16 @@
             </div>
         </div>
         <!-- End Testimonial -->
+
         <!-- Start Footer -->
         <div class="footer">
             <div class="container">
                 <div class="row1">
-                    <div class="col">
+                    <div class="left col-md-4 col-sm-12">
                         <h2>get in touch</h2>
                         <div class="icon">
                             <div class="i"><i class="fa fa-phone-alt"></i></div>
-                            <span> 02 0111 765 1690</span>
+                            <span> +02 0111 765 1690</span>
                         </div>
                         <div class="icon">
                             <div class="i">
@@ -324,7 +347,7 @@
                             <a href="https://github.com/Roshdy-Mammdouh">github </a>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="left col-md-4 col-sm-12">
                         <h2>quick links</h2>
                         <a href="#">about us</a>
                         <a href="#">Contact Us</a>
@@ -332,7 +355,7 @@
                         <a href="#">Terms &amp; Condition</a>
                         <a href="#">Support</a>
                     </div>
-                    <div class="col">
+                    <div class="left col-md-4 col-sm-12">
                         <h2>newsletter</h2>
                         <div class="sing">
                             <input type="text" placeholder="Your email">
@@ -345,8 +368,9 @@
                             <a><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="row2">
+                <div class="row2 centerByFlex">
                     <span> Made By  </span>
                     <a class="copy" href="https://www.linkedin.com/in/roshdi-mammdoh-27a004209 ">Roshdy Mammdouh</a>
                 </div>
@@ -354,6 +378,7 @@
         </div>
         <!-- End Footer-->
         <script src="../../library/jquery.js"></script>
+        <script src="../../library/Bootstrap/bootstrap.bundle.js"></script>
         <script src="../../library/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
         <script src="js/home-haircut.js"></script>
     </body>

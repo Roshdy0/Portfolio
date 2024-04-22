@@ -1,13 +1,14 @@
-var owl = $('.first-owl');
-owl.owlCarousel({
+let sliderOwl = $('.slider .owl-carousel');
+sliderOwl.owlCarousel({
     items:1,
     margin:10,
-    loop:true,    
-    autoplay:true,
+    nav: true,
+    loop:true,
     dots:false,
+    autoplay:true,
 });
 
-var teamOwl = $('.team-owl');
+let teamOwl = $('.team .owl-carousel');
 teamOwl.owlCarousel({
     items:4,
     margin:10,
@@ -30,11 +31,11 @@ teamOwl.owlCarousel({
     }
 });
 
-var testimonialOwl = $('.testimonial-owl');
+var testimonialOwl = $('.testimonial .owl-carousel');
 testimonialOwl.owlCarousel({
     items:1,
     margin:10,
     loop:true,    
     autoplay:true,
-    autoplayTimeout:10000,
+    autoplayTimeout:10000
 });

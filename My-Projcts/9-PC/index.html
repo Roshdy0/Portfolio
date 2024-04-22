@@ -1,18 +1,25 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Home </title>
-        <link rel="stylesheet" href="../../library/webfonts.min.css">
         <link rel="stylesheet" href="../../library/normalize.css">
+        <link rel="stylesheet" href="../../library/Wow/animate.css">
+        <link rel="stylesheet" href="../../library/webfonts.min.css">
+        <link rel="stylesheet" href="../../library/Bootstrap/bootstrap.css">
         <link rel="stylesheet" href="css/Pc-Home.css">
     </head>
+
     <body>
         <!--Start Header-->
-        <div class="header">
-            <div class="container">
-                <img class="logo" src="image/logo.png" alt="">
-                <div class="links">
+        <div class="header col-12">
+            <div class="container centerByFlex">
+                <div class="col-6 left logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="col-6 right links">
                     <span class="icon">
                         <span></span>
                         <span></span>
@@ -26,41 +33,51 @@
                     </ul>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!-- End Header -->
+
         <!--Start Landing Section -->
         <div class="landing">
             <div class="intro-text">
                 <h1> Etymology </h1>
-                <p> Charles Babbage called the word "computer" the person who enters data into a computer, and later the word was launched on the machine itself. </p>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!--End Landing Section -->
+
         <!-- Start Section Features -->
-        <div class="features">
+        <div class="features wow bounceInUp">
             <div class="container">
-                <div class="feat">
+                <div class="wow bounceInRight feat col-md-4 col-sm-12">
                     <i class="fa-solid fa-gamepad"></i>                    
-                    <p> <span> Gaming </span> It is a personal computer program to play video and computer games...  </p>
+                    <h1> Gaming </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste vitae dolor nisi</p>
                 </div>
-                <div class="feat">
+                <div class="wow bounceInUp feat col-md-4 col-sm-12">
                     <i class="fa-solid fa-code"></i>                    
-                    <p> <span> The study </span> is scientific: the search for new knowledge and its documents are systematic...  </p>
+                    <h1> study </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste vitae dolor nisi</p>
                 </div>
-                <div class="feat">
+                <div class="wow bounceInLeft feat col-md-4 col-sm-12">
                     <i class="fa-solid fa-briefcase"></i>                    
-                    <p> <span> A profession </span> Professional careers are established on the basis of specialized educational training...</p>
+                    <h1> profession </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste vitae dolor nisi</p>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
         <!-- End Section Features -->
+
         <!-- Start Section Services -->
-        <div class="services" id="Services">
+        <div class="services wow bounceInUp" id="Services">
             <div class="container">
-                <h2 class="special-heading">Services</h2>
-                <p> Don't be busy, be productive</p>
-                <div class="services-content">
-                    <div class="col">
+                <div class="title">
+                    <h2 class="special-heading">Services</h2>
+                    <p> Don't be busy, be productive</p>
+                </div>
+                <div class="grid">
+                    <div class="wow bounceInLeft col">
                         <div class="srv">
                             <i class="fa-solid fa-microchip"></i>
                             <div class="text">
@@ -76,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="wow bounceInUp col">
                         <div class="srv">
                             <i class="fa-sharp fa-solid fa-computer"></i>
                             <div class="text">
@@ -91,38 +108,40 @@
                                 <p> It is a computer that can be operated through the battery, so the transfer of this type of device . </p>
                             </div>
                         </div>
-                        <!-- End Service -->
                     </div>
-                    <div class="col">
-                        <div class="image">
-                            <img src="image/1.jpg" alt="">
+                    <div class="wow bounceInRight col">
+                        <div class="image col-md-d-none"> 
+                            <img src="image/1.jpg" alt=""> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Section Services -->
+
         <!-- Start Section Portfolio -->
-        <div class="portfolio" id="Portfolio">
+        <div class="portfolio wow bounceInUp" id="Portfolio">
             <div class="container">
-                <h2 class="special-heading">Portfolio</h2>
-                <p> If you do it right, it will last forever </p>
-                <div class="portfolio-content">
-                    <div class="card">
+                <div class="title">
+                    <h2 class="special-heading">Portfolio</h2>
+                    <p> If you do it right, it will last forever </p>
+                </div>
+                <div class="grid">
+                    <div class="card wow bounceInLeft">
                         <img src="image/portfolio1.png" alt="">
                         <div class="info">
                             <h3> Tablet </h3>
                             <p> And this type of air works on the mouse and keyboard, which is a computer that works through a touch screen. </p>
                         </div>                        
                     </div>  
-                    <div class="card">
+                    <div class="card wow bounceInUp">
                         <img src="image/portfolio2.png" alt="">
                         <div class="info">
                             <h3> Laptop </h3>
                             <p> It is a computer that can run on battery </p>
                         </div>                        
                     </div>  
-                    <div class="card">
+                    <div class="card wow bounceInRight">
                         <img src="image/portfolio3.png" alt="">
                         <div class="info">
                             <h3> PC </h3>
@@ -133,30 +152,38 @@
             </div>
         </div>
         <!-- End Section Portfolio -->
+
         <!-- Start Section About Us -->
-        <div class="about" id="About">
+        <div class="about wow bounceInUp" id="About">
             <div class="container">
-                <h2 class="special-heading">About Us</h2>
-                <p> Less is more work </p>
-                <div class="about-content">
-                    <div class="image"><img src="image/about.jpg" alt=""></div>
-                    <div class="text">
-                        <p> These are computers that are designed to be suitable for placing on the user's desktop </p>
+                <div class="title">
+                    <h2 class="special-heading">About Us</h2>
+                    <p> Less is more work </p>
+                </div>
+                <div class="content">
+                    <div class="wow bounceInLeft col-lg-3 image col-md-d-none">
+                        <img src="image/about.jpg" alt="">
+                    </div>
+                    <div class="wow bounceInRight col-lg-8 text">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium! </p>
                         <hr>
-                        <p> which is a computer program or software, and it is computer term applied to computer operations </p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse, alias, sed quo officia? </p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Section About Us -->
+
         <!-- Start Section Contact -->
-        <div class="contact" id="Contact">
+        <div class="contact wow bounceInUp center" id="Contact">
             <div class="container">
-                <h2 class="special-heading">Contact</h2>
-                <p> We are born to create </p>
-                <div class="info">   
+                <div class="titl">
+                    <h2 class="special-heading">Contact</h2>
+                    <p> We are born to create </p>
+                </div>
+                <div class="info">
                     <p class="label">Feel free to drop us a line at: </p>
-                    <a href="" class="link">roshdy.mammdouh@gmail.com</a>
+                    <a href="" class="roshdy.mammdouh@gmail.com">roshdy.mammdouh@gmail.com</a>
                     <div class="social">find us on social network 
                         <i class="fa-brands fa-google"></i>
                         <i class="fa-brands fa-youtube"></i>
@@ -168,24 +195,16 @@
         <!-- End Section Contact -->
         
         <!-- Start Section Footer -->
-        <div class="footer">&copy;2021-<span>By</span><a href="https://www.linkedin.com/in/roshdi-mammdoh-27a004209">Roshdy Mammdouh</a></div>
+        <div class="footer wow bounceInUp">
+            &copy;2021-
+            <span>By</span>
+            <a href="https://www.linkedin.com/in/roshdi-mammdoh-27a004209">Roshdy Mammdouh</a>
+        </div>
         <!-- End Section Footer -->
+
+        <script src="../../library/jquery.js"></script>
+        <script src="../../library/Wow/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script src="../../library/Bootstrap/bootstrap.bundle.js"></script>
     </body>
-    <script>
-         // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-        document.addEventListener('contextmenu', (e) => e.preventDefault());
-        function ctrlShiftKey(e, keyCode) {
-        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-        }
-        document.onkeydown = (e) => {
-        if (
-            event.keyCode === 123 ||
-            ctrlShiftKey(e, 'I') ||
-            ctrlShiftKey(e, 'J') ||
-            ctrlShiftKey(e, 'C') ||
-            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-        )
-            return false;
-        };
-    </script>
 </html>
