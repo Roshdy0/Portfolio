@@ -1,0 +1,296 @@
+:root {
+    --main-color: #2196f3;
+    --main-backGround: #009688;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.active{
+    display: block !important;
+}
+.hidden{
+    display: none;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+}
+
+.game {
+    min-height: 100vh;
+    text-align: center;
+    background-color: #eee;
+}
+
+.game .name {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.game .container {
+    margin: auto;
+    max-width: 900px;
+    position: relative;
+}
+
+.game .container .message {
+    position: relative;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.game .container .message span {
+    font-weight: bold;
+    color: var(--main-backGround);
+}
+.game .container .message span::before {
+    content: "[ ";
+}
+.game .container .message span::after {
+    content: " ]";
+}
+
+.game .instruction{
+    color: #FFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.game .instruction .button{
+    width: 120px;
+    color: #FFF;
+    cursor: pointer;
+    padding: 14px 0px;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: var(--main-backGround);
+}
+.game .instruction .ex{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: grid;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    background-color: #009688;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+.game .instruction .ex h1{
+    text-align: center;
+    margin: 0 0 0 - 60px;
+}
+.game .instruction p ul{
+    list-style: auto;
+}
+.game .instruction ul li {
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+.game .container .SelectLevel{
+    position: absolute;
+    top: 84px;
+}
+.game .container .SelectLevel select{
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.game .container .SelectLevel .box{
+    width: 150px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 6px;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    background-color: var(--main-backGround);
+}
+.game .container .SelectLevel .box .chose::before{
+    content: "";
+    top: 17px;
+    z-index: 1;
+    right: 30px;
+    border-width: 12px;
+    position: absolute;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #FFF transparent transparent transparent;
+}
+.game .container .SelectLevel .box .chose,
+.game .container .SelectLevel .box .levels{
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--main-backGround);
+    width: -webkit-fill-available;
+}
+.game .container .SelectLevel .box .levels{
+    display: none;
+}
+.game .container .SelectLevel .box p{
+    border-bottom: 1px solid;
+    padding: 14px 0 14px 20px;
+}
+
+.game .container .start {
+    padding: 20px;
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--main-backGround);
+}
+.game .container .the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+}
+.game .container .input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    display: block;
+    font-size: 20px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    caret-color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+.game .container .input:focus {
+    outline: none;
+}
+.game .container .upcoming-words {
+    padding: 15px;
+    display: flex;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+.game .container .upcoming-words div {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.game .container .control {
+    padding: 15px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+.game .container .control span {
+    color: var(--main-backGround);
+    font-weight: bold;
+}
+.game .container .finish {
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.game .container .finish .good {
+    color: var(--main-color);
+}
+.game .container .finish .bad {
+    font-weight: bold;
+    position: absolute;
+    background-color: #ff0000e3;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    color: #FFF;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    animation: popup 1s forwards;
+    -webkit-animation: popup 1s forwards;
+}
+.hiddenPopup{
+    animation: hiddenPopup 1s forwards;
+    -webkit-animation: hiddenPopup 1s forwards;
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    50%{
+        transform: scale(150%);
+        -webkit-transform: scale(150%);
+        -moz-transform: scale(150%);
+        -ms-transform: scale(150%);
+        -o-transform: scale(150%);
+    }
+    100%{
+        transform: scale(110%);
+        -webkit-transform: scale(110%);
+        -moz-transform: scale(110%);
+        -ms-transform: scale(110%);
+        -o-transform: scale(110%);
+    }
+}
+@keyframes hiddenPopup{
+    0%{
+        transform: scale(100%);
+        -webkit-transform: scale(100%);
+        -moz-transform: scale(100%);
+        -ms-transform: scale(100%);
+        -o-transform: scale(100%);
+}
+    50%{
+        transform: scale(150%);
+        -webkit-transform: scale(150%);
+        -moz-transform: scale(150%);
+        -ms-transform: scale(150%);
+        -o-transform: scale(150%);
+    }
+    100%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+}
