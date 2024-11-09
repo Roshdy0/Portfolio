@@ -17,7 +17,6 @@ window.onscroll = function () {
         NavBarOffSetTop.style.setProperty ("--header-color", "#ea4020");
         rootHeaderColor.style.setProperty ('--header-text-color', '#fff');
         rootHeaderColor.style.setProperty ('--header-hight', '50px');
-        rootHeaderColor.style.setProperty ('--header-hight', '50px');
         Up.style.display = "block";
     }
     else{

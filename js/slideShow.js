@@ -1,6 +1,7 @@
 var owl1 = $('.owl-box'),
 owl2 = $('.owl-box2'),
 owl3 = $('.owl-box3');
+owl4 = $('.owl-portfolio');
 
 let i,
 currentIndex = 0,
@@ -44,4 +45,11 @@ owl3.owlCarousel({
     margin: 0, 
     autoplay:true,
     dots:false,
+});
+
+owl4.owlCarousel({
+    items:1,
+    nav:true,
+    loop:true,   
+    autoplay:true,
 });

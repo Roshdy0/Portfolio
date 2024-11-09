@@ -584,7 +584,7 @@ a.dropdown-item.active, .dropdown-item:hover, .dropdown-item:focus{
 .myPortfolio .box .img {
     height: 80vh;
 }
-.myPortfolio .box:hover .img {
+.myPortfolio .box:hover .img{
     transform: scale(1.1);
     transition: var(--main-transition);
 }
@@ -638,23 +638,6 @@ a.dropdown-item.active, .dropdown-item:hover, .dropdown-item:focus{
 }
 .myPortfolio .box:hover .links a:nth-of-type(2){
     right: 30px;
-}
-.myPortfolio .owl-prev,
-.myPortfolio .owl-next{
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    font-size: 40px !important;
-    transform: translateY(-50%);
-}
-.myPortfolio .owl-next{
-    right: 20px;
-    left: unset;
-}
-.myPortfolio .owl-prev span,
-.myPortfolio .owl-next span{
-    font-size: 50px;
-    color: #eee;
 }
 /* End My Portfolio */
 /* Start  Contact Me */
